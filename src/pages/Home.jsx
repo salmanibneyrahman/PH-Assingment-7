@@ -43,7 +43,7 @@ export default function Home() {
         </p>
         <button
           onClick={handleAddFriend}
-          className="btn bg-[#1a5c38] hover:bg-[#154d2e] text-white border-none rounded-full px-5 py-2 flex items-center gap-2 mx-auto text-sm"
+          className="btn bg-[#1a5c38] hover:bg-[#154d2e] text-white border-none rounded-md px-5 py-2 flex items-center gap-2 mx-auto text-sm"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
