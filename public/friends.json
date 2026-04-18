@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=David",
+    "status": "now",
+    "tags": ["college", "work"],
+    "daysSinceContact": 0,
+    "goal": 30,
+    "bio": "Old college buddy turned work colleague. Love catching up over coffee.",
+    "email": "david.kim@email.com"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma",
+    "status": "active",
+    "tags": ["family", "work"],
+    "daysSinceContact": 5,
+    "goal": 14,
+    "bio": "Former colleague, great mentor. We share interests in design and travel.",
+    "email": "emma.wilson@email.com"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Lisa",
+    "status": "active",
+    "tags": ["college", "travel"],
+    "daysSinceContact": 12,
+    "goal": 30,
+    "bio": "Travel buddy from college days. Always planning the next adventure.",
+    "email": "lisa.nakamura@email.com"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=James",
+    "status": "overdue",
+    "tags": ["work", "family"],
+    "daysSinceContact": 45,
+    "goal": 30,
+    "bio": "Long-time friend from the neighbourhood. Great sense of humour.",
+    "email": "james.wright@email.com"
+  },
+  {
+    "id": 5,
+    "name": "Sarah Chen",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+    "status": "now",
+    "tags": ["college"],
+    "daysSinceContact": 1,
+    "goal": 7,
+    "bio": "Best friend since high school. She knows all my secrets!",
+    "email": "sarah.chen@email.com"
+  },
+  {
+    "id": 6,
+    "name": "Marcus Johnson",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus",
+    "status": "active",
+    "tags": ["work"],
+    "daysSinceContact": 20,
+    "goal": 30,
+    "bio": "Colleague from previous job. Brilliant developer and great collaborator.",
+    "email": "marcus.johnson@email.com"
+  },
+  {
+    "id": 7,
+    "name": "Olivia Park",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Olivia",
+    "status": "overdue",
+    "tags": ["family", "college"],
+    "daysSinceContact": 60,
+    "goal": 14,
+    "bio": "Cousin who moved abroad. We try to keep in touch as much as possible.",
+    "email": "olivia.park@email.com"
+  },
+  {
+    "id": 8,
+    "name": "Ryan O'Brien",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ryan",
+    "status": "active",
+    "tags": ["travel", "work"],
+    "daysSinceContact": 18,
+    "goal": 30,
+    "bio": "Met at a conference. Shares passion for hiking and outdoor adventures.",
+    "email": "ryan.obrien@email.com"
+  },
+  {
+    "id": 9,
+    "name": "Priya Patel",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
+    "status": "now",
+    "tags": ["college", "work"],
+    "daysSinceContact": 2,
+    "goal": 7,
+    "bio": "Study group partner turned lifelong friend. Always supportive.",
+    "email": "priya.patel@email.com"
+  },
+  {
+    "id": 10,
+    "name": "Ethan Brooks",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ethan",
+    "status": "overdue",
+    "tags": ["family"],
+    "daysSinceContact": 90,
+    "goal": 30,
+    "bio": "Uncle who lives in another city. Need to catch up more often.",
+    "email": "ethan.brooks@email.com"
+  },
+  {
+    "id": 11,
+    "name": "Zoe Martinez",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Zoe",
+    "status": "active",
+    "tags": ["travel", "college"],
+    "daysSinceContact": 25,
+    "goal": 30,
+    "bio": "Travel partner and college roommate. Full of energy and ideas.",
+    "email": "zoe.martinez@email.com"
+  },
+  {
+    "id": 12,
+    "name": "Tom Fletcher",
+    "photo": "https://api.dicebear.com/7.x/avataaars/svg?seed=Tom",
+    "status": "active",
+    "tags": ["work", "college"],
+    "daysSinceContact": 10,
+    "goal": 14,
+    "bio": "Startup co-founder and trusted advisor. Always full of great ideas.",
+    "email": "tom.fletcher@email.com"
+  }
+]
