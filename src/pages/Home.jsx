@@ -34,8 +34,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Banner Section */}
-      <div className="bg-white py-10 px-4 text-center border-b border-gray-100">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+      <div className="py-10 px-4 text-center border-b border-gray-100 max-w-6xl mx-auto">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2  mx-auto">
           Friends to keep close in your life
         </h1>
         <p className="text-gray-500 text-sm md:text-base max-w-md mx-auto mb-5">
@@ -52,25 +52,29 @@ export default function Home() {
         </button>
 
         {/* Summary Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mt-8">
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col items-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 max-w-6xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 min-h-37.5 flex flex-col items-center justify-center">
             <span className="text-3xl font-bold text-gray-800">{totalFriends}</span>
             <span className="text-xs text-gray-500 mt-1">Total Friends</span>
           </div>
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col items-center">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 min-h-37.5 flex flex-col items-center justify-center">
             <span className="text-3xl font-bold text-gray-800">{onTrack}</span>
             <span className="text-xs text-gray-500 mt-1">On Track</span>
           </div>
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col items-center">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 min-h-37.5 flex flex-col items-center justify-center">
             <span className="text-3xl font-bold text-gray-800">{needAttention}</span>
             <span className="text-xs text-gray-500 mt-1">Need Attention</span>
           </div>
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 flex flex-col items-center">
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-4 min-h-37.5 flex flex-col items-center justify-center">
             <span className="text-3xl font-bold text-gray-800">{interactionsThisMonth}</span>
             <span className="text-xs text-gray-500 mt-1">Interactions This Month</span>
           </div>
         </div>
       </div>
+
+      {/* Horizontal Bar */}
+<div className="mt-10 border-t border-gray-200 max-w-6xl mx-auto"></div>
+
 
       {/* Friends Section */}
       <div className="max-w-6xl mx-auto px-4 py-8">
