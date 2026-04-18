@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const linkClass = ({ isActive }) =>
-    `flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
+    `flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200 ${
       isActive
         ? "bg-[#1a5c38] text-white"
         : "text-gray-600 hover:text-[#1a5c38] hover:bg-green-50"
@@ -11,9 +11,10 @@ export default function Navbar() {
   return (
     <div className="navbar bg-white shadow-sm px-4 md:px-10 sticky top-0 z-50 border-b border-gray-100 min-h-14">
       <div className="navbar-start">
-        <NavLink to="/" className="flex items-center gap-2">
-          {/* Logo text fallback — user can swap with their logo.png */}
-          <span className="text-[#1a5c38] font-black text-xl tracking-tight">KeenKeeper</span>
+        <NavLink to="/" className="flex items-center">
+          {/* Logo text */}
+          <span className="font-black text-xl tracking-tight">Keen</span>
+          <span className="text-[#1a5c38] font-black text-xl tracking-tight">Keeper</span>
         </NavLink>
       </div>
       <div className="navbar-end gap-1 md:gap-2">
