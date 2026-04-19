@@ -4,9 +4,9 @@ import { toast } from "react-toastify";
 import { useTimeline } from "../context/TimelineContext";
 
 const statusConfig = {
-  now: { label: "NOW", badgeClass: "badge-success text-white" },
-  active: { label: "ACTIVE", badgeClass: "badge-info text-white" },
-  overdue: { label: "OVERDUE", badgeClass: "badge-error text-white" },
+  "on-track": { label: "on-track", badgeClass: "badge-success text-white" },
+  "almost due": { label: "almost due", badgeClass: "badge-info text-white" },
+  overdue: { label: "overdue", badgeClass: "badge-error text-white" },
 };
 
 const tagColors = [

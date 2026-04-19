@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
 
   const totalFriends = friends.length;
-  const onTrack = friends.filter((f) => f.status === "now" || f.status === "active").length;
+  const onTrack = friends.filter((f) => f.status === "on-track" || f.status === "active").length;
   const needAttention = friends.filter((f) => f.status === "overdue").length;
   // Simulate interactions this month
   const interactionsThisMonth = 12;

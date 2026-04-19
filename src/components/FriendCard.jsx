@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
 const statusConfig = {
-  now: { label: "NOW", className: "bg-green-500 text-white" },
-  active: { label: "ACTIVE", className: "bg-blue-500 text-white" },
-  overdue: { label: "OVERDUE", className: "bg-red-500 text-white" },
+  "on-track": { label: "on-track", className: "bg-green-500 text-white" },
+  "almost due": { label: "almost due", className: "bg-[#efad44] text-white" },
+  overdue: { label: "overdue", className: "bg-red-500 text-white" },
 };
 
 const tagColors = [
