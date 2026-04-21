@@ -6,14 +6,14 @@ KeenKeeper is a friendship management web application that helps users stay conn
 
 ## Technologies I Used
 
-**React.js** - For building the UI with reusable components and managing application state
-**React Router DOM** - For handling client-side navigation between Home, Timeline, Stats, and Friend Detail pages
-**Tailwind CSS** - For styling everything quickly and building a fully responsive layout
-**DaisyUI** - As a Tailwind component plugin for cards, badges, buttons, and modals
-**Recharts** - For rendering the pie chart on the Friendship Analytics page
-**React Toastify** - For showing toast notifications when users log check-ins
-**SVG Icons** - For all icons across the navbar, buttons, cards, and timeline entries
-**Vite** - As the build tool for fast development and optimized production builds
+- **React.js** - For building the UI with reusable components and managing application state
+- **React Router DOM** - For handling client-side navigation between Home, Timeline, Stats, and Friend Detail pages
+- **Tailwind CSS** - For styling everything quickly and building a fully responsive layout
+- **DaisyUI** - As a Tailwind component plugin for cards, badges, buttons, and modals
+- **Recharts** - For rendering the pie chart on the Friendship Analytics page
+- **React Toastify** - For showing toast notifications when users log check-ins
+- **SVG Icons** - For all icons across the navbar, buttons, cards, and timeline entries
+- **Vite** - As the build tool for fast development and optimized production builds
 
 
 ## Key Features
