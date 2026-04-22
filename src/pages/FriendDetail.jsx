@@ -81,6 +81,7 @@ export default function FriendDetail() {
       title: `${type} with ${friend.name}`,
       date: formattedDate,
       friendId: friend.id,
+      friendName: friend.name,
     };
     addEntry(entry);
     toast.success(`${type} with ${friend.name} logged!`, {
