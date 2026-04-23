@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTimeline } from "../context/TimelineContext";
+
 const typeConfig = {
   Call: {
     bgColor: "bg-green-100",
@@ -28,30 +29,32 @@ const typeConfig = {
       </svg>
     ),
   },
-
 };
+
 export default function Timeline() {
   const { entries } = useTimeline();
   const [filter, setFilter] = useState("All");
-  const filters = ["All", "Call", "Text", "Video"];
+
   const filtered =
     filter === "All" ? entries : entries.filter((e) => e.type === filter);
+
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4">
+    <div className="min-h-screen bg-gray-50 py-6 sm:py-8 px-4">
       <div className="max-w-2xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6">Timeline</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">Timeline</h1>
+
         {/* Filter Dropdown */}
         <div className="mb-6">
-          <div className="relative w-56">
+          <div className="relative w-full sm:w-56">
             <select
               value={filter}
               onChange={(e) => setFilter(e.target.value)}
-              className="w-full appearance-none bg-white border border-gray-200 rounded-lg px-4 py-2.5 pr-10 text-gray-500 text-sm focus:outline-none focus:border-gray-300 cursor-pointer"
+              className="w-full appearance-none bg-white border border-gray-200 rounded-lg px-4 py-2.5 pr-10 text-gray-500 text-sm focus:outline-none focus:border-gray-300 cursor-pointer shadow-sm"
             >
-              <option value="All">Filter timeline</option>
-              <option value="Call">Call</option>
-              <option value="Text">Text</option>
-              <option value="Video">Video</option>
+              <option value="All">All Activities</option>
+              <option value="Call">Calls</option>
+              <option value="Text">Texts</option>
+              <option value="Video">Videos</option>
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-3 flex items-center">
               <svg className="w-4 h-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -60,14 +63,15 @@ export default function Timeline() {
             </div>
           </div>
         </div>
+
         {filtered.length === 0 ? (
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-12 text-center">
-            <div className="text-6xl mb-4">📋</div>
-            <h3 className="text-gray-700 font-semibold mb-2">No timeline entries yet</h3>
+          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 sm:p-12 text-center">
+            <div className="text-5xl sm:text-6xl mb-4">📋</div>
+            <h3 className="text-gray-700 font-semibold mb-2">No entries found</h3>
             <p className="text-gray-400 text-sm max-w-xs mx-auto">
               {filter === "All"
-                ? "Go to a friend's page and log a Call, Text, or Video to start building your timeline."
-                : `No ${filter} entries yet. Log a ${filter} with a friend to get started.`}
+                ? "Go to a friend's page and log an activity to start building your timeline."
+                : `No ${filter} entries yet. Log a ${filter} to see it here.`}
             </p>
           </div>
         ) : (
@@ -77,23 +81,24 @@ export default function Timeline() {
               return (
                 <div
                   key={entry.id}
-                  className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 flex items-center gap-4"
+                  className="bg-white rounded-xl border border-gray-100 shadow-sm p-3 sm:p-4 flex items-center gap-3 sm:gap-4 transition-transform active:scale-[0.98]"
                 >
                   {/* Icon bubble */}
                   <div
-                    className={`w-10 h-10 rounded-full ${config.bgColor} flex items-center justify-center flex-shrink-0`}
+                    className={`w-9 h-9 sm:w-10 sm:h-10 rounded-full ${config.bgColor} flex items-center justify-center flex-shrink-0`}
                   >
                     {config.icon}
                   </div>
+
                   {/* Content */}
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">
+                  <div className="flex-1">
+                    <p className="text-sm font-semibold text-gray-800 leading-snug">
                       {entry.type}{" "}
                       <span className="font-normal text-gray-500">
-                        with {entry.friendName}
+                        with {entry.friendName || "a friend"}
                       </span>
                     </p>
-                    <p className="text-xs text-gray-400 mt-0.5">{entry.date}</p>
+                    <p className="text-[11px] sm:text-xs text-gray-400 mt-0.5">{entry.date}</p>
                   </div>
                 </div>
               );
